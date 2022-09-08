@@ -5,6 +5,7 @@ import androidx.core.app.ActivityCompat;
 
 import android.Manifest;
 import android.content.Context;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Address;
 import android.location.Geocoder;
@@ -14,8 +15,11 @@ import android.location.LocationManager;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.webkit.WebView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import org.w3c.dom.Text;
 
 import java.io.IOException;
 import java.util.ArrayDeque;
@@ -24,6 +28,9 @@ import java.util.List;
 import java.util.Locale;
 
 public class myLoc extends AppCompatActivity {
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -53,5 +60,16 @@ public class myLoc extends AppCompatActivity {
         } else {
             Toast.makeText(myLoc.this, "GPS DESABILITADO.", Toast.LENGTH_LONG).show();
         }
+
+        mostrarGoogleMaps(LocalizacaoListener.latitude, LocalizacaoListener.longitude);
+    }
+    public void mostrarGoogleMaps(double latitude, double longitude) {
+        WebView wv = findViewById(R.id.webv);
+        wv.getSettings().setJavaScriptEnabled(true);
+        wv.loadUrl("https://www.google.com/maps/search/?api=1&query=" + latitude + "," + longitude);
+    }
+    public void voltar(View view){
+        Intent it = new Intent(this, MenuPrincipal.class);
+        startActivity(it);
     }
 }

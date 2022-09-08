@@ -10,6 +10,8 @@ public class LocalizacaoListener implements LocationListener {
     public static double latitude;
     public static double longitude;
 
+
+
     @Override
     public void onLocationChanged(Location location) {
         this.latitude = location.getLatitude();

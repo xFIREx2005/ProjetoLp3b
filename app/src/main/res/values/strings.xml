@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">ProjetoLp3b</string>
     <string name="title_activity_maps2">MapsActivity2</string>
+    <string name="voltar">VOLTAR</string>
+    <string name="limpar">LIMPAR</string>
+    <string name="recuperar">RECUPERAR</string>
 </resources>

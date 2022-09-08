@@ -2,6 +2,9 @@ package com.example.projetolp3b;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -35,7 +38,11 @@ public class Localizacao extends AppCompatActivity {
         btSubmit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(Localizacao.this, "Criando um Toast!!!!!", Toast.LENGTH_SHORT).show();
+                SharedPreferences prefs = getSharedPreferences("preferencias", Context.MODE_PRIVATE);
+                SharedPreferences.Editor ed = prefs.edit();
+                ed.putString("local", etView.getText().toString());
+                ed.apply();
+                Toast.makeText(Localizacao.this, "Localização Gravada", Toast.LENGTH_SHORT).show();
 
                 aDdress = etView.getText().toString();
 
@@ -70,4 +77,18 @@ public class Localizacao extends AppCompatActivity {
         wv.getSettings().setJavaScriptEnabled(true);
         wv.loadUrl("https://www.google.com/maps/search/?api=1&query=" + latitude + "," + longitude);
     }
+
+    public void limpar(View view){
+        etView.setText("");
+        txtLoc.setText("");
+    }
+    public void rec(View view){
+        SharedPreferences pref = getSharedPreferences("preferencias", Context.MODE_PRIVATE);
+        etView.setText(pref.getString("local", "nada salvo"));
+    }
+    public void voltar(View view){
+        Intent it = new Intent(this, MenuPrincipal.class);
+        startActivity(it);
+    }
+
 }

@@ -2,11 +2,13 @@ package com.example.projetolp3b;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.os.Bundle;
+import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.RotateAnimation;
 import android.widget.ImageView;
@@ -82,5 +84,9 @@ public class Bussula extends AppCompatActivity implements SensorEventListener {
     @Override
     public void onAccuracyChanged(Sensor sensor, int i) {
 
+    }
+    public void voltar(View view){
+        Intent it = new Intent(this, MenuPrincipal.class);
+        startActivity(it);
     }
 }

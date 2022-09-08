@@ -2,6 +2,7 @@ package com.example.projetolp3b;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -112,5 +113,9 @@ public class MainActivity extends AppCompatActivity {
             distance = SphericalUtil.computeDistanceBetween(local1, local2);
             tvAddress2.setText(String.valueOf(distance / 1000));
         }
+    }
+    public void voltar(View view){
+        Intent it = new Intent(this, MenuPrincipal.class);
+        startActivity(it);
     }
 }
