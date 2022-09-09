@@ -3,5 +3,24 @@
     <string name="title_activity_maps2">MapsActivity2</string>
     <string name="voltar">VOLTAR</string>
     <string name="limpar">LIMPAR</string>
+    <string name="buscar">BUSCAR</string>
     <string name="recuperar">RECUPERAR</string>
+    <string name="bussula">BÚSSOLA</string>
+    <string name="myloc">MINHA LOCALIZAÇÂO</string>
+    <string name="loc">LOCALIZAÇÃO</string>
+    <string name="dis">DISTANCIA</string>
+    <string name="cre">CREDITOS</string>
+    <string name="digcli">DIGITE O ENDEREÇO E APERTE O BOTÃO BUSCAR</string>
+    <string name="dig">DIGITE O ENDEREÇO</string>
+    <string name="part">PARTICIPANTES</string>
+    <string name="nkaique">KAIQUE GONÇALVES</string>
+    <string name="njoao">JOÃO VITOR</string>
+    <string name="escola">ESCOLA</string>
+    <string name="inst">INSTAGRAM</string>
+    <string name="app">MAPs BACANA</string>
+    <string name="cal">CALCULAR</string>
+    <string name="loc1">PRIMEIRA LOCALIZAÇÃO</string>
+    <string name="loc2">SEGUNDA LOCALIZAÇÃO</string>
+
+
 </resources>

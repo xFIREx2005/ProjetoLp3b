@@ -50,8 +50,6 @@ public class MainActivity extends AppCompatActivity {
         btSubmit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(MainActivity.this, "Criando um Toast!!!!!", Toast.LENGTH_SHORT).show();
-
                 aDdress = etPlace1.getText().toString();
                 aDdress1 = etPlace2.getText().toString();
 
@@ -63,10 +61,6 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-
-        //distance = SphericalUtil.computeDistanceBetween(sydney, Brisbane);
-        //Toast.makeText(this, "Distance between Sydney and Brisbane is \n " + String.format("%.2f", distance / 1000) + "km", Toast.LENGTH_SHORT).show();
-
     }
     private class GeoHandler extends Handler{
         @Override
@@ -111,7 +105,7 @@ public class MainActivity extends AppCompatActivity {
             }
             tvAddress1.setText(aDdress1);
             distance = SphericalUtil.computeDistanceBetween(local1, local2);
-            tvAddress2.setText(String.valueOf(distance / 1000));
+            tvAddress2.setText(String.format("%.2f", distance / 1000) + "km");
         }
     }
     public void voltar(View view){

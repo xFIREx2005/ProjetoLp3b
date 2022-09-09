@@ -10,13 +10,13 @@
         android:id="@+id/btn_submit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:text="@string/cal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.949"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.2" />
+        app:layout_constraintVertical_bias="0.385" />
 
     <Button
         android:id="@+id/btn_submit2"
@@ -33,31 +33,31 @@
 
     <TextView
         android:id="@+id/tv_address"
-        android:layout_width="282dp"
-        android:layout_height="140dp"
-        android:layout_marginStart="168dp"
-        android:layout_marginEnd="182dp"
-        android:text="TextView"
+        android:layout_width="190dp"
+        android:layout_height="175dp"
+        android:background="#C5C3C3"
+        android:text=""
+        android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.416"
+        app:layout_constraintHorizontal_bias="0.027"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.355" />
+        app:layout_constraintVertical_bias="0.591" />
 
     <TextView
         android:id="@+id/tv_address2"
-        android:layout_width="280dp"
-        android:layout_height="155dp"
-        android:layout_marginStart="168dp"
-        android:layout_marginEnd="182dp"
-        android:text="TextView"
+        android:layout_width="190dp"
+        android:layout_height="175dp"
+        android:background="#C5C3C3"
+        android:text=""
+        android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.415"
+        app:layout_constraintHorizontal_bias="0.968"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.631" />
+        app:layout_constraintVertical_bias="0.591" />
 
     <TextView
         android:id="@+id/tv_address3"
@@ -65,7 +65,10 @@
         android:layout_height="54dp"
         android:layout_marginStart="168dp"
         android:layout_marginEnd="182dp"
-        android:text="TextView"
+        android:background="#C5C3C3"
+        android:text=""
+        android:textAlignment="center"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.431"
@@ -75,32 +78,30 @@
 
     <EditText
         android:id="@+id/et_place1"
-        android:layout_width="220dp"
-        android:layout_height="68dp"
+        android:layout_width="330dp"
+        android:layout_height="55dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
+        android:text="@string/loc1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.151"
+        app:layout_constraintHorizontal_bias="0.617"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.043" />
+        app:layout_constraintVertical_bias="0.115" />
 
     <EditText
         android:id="@+id/et_place2"
-        android:layout_width="222dp"
-        android:layout_height="65dp"
-        android:layout_marginTop="92dp"
-        android:layout_marginEnd="98dp"
+        android:layout_width="330dp"
+        android:layout_height="55dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
+        android:text="@string/loc2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.318"
+        app:layout_constraintHorizontal_bias="0.611"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.048" />
+        app:layout_constraintVertical_bias="0.259" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
